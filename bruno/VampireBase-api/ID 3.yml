@@ -1,0 +1,22 @@
+info:
+  name: ID 3
+  type: http
+  seq: 18
+
+http:
+  method: PUT
+  url: http://localhost:8080/api/v1/vampiros/3
+  body:
+    type: json
+    data: |-
+      {
+        "foto_perfil": "https://mardehistorias.wordpress.com/wp-content/uploads/2022/11/bela-lugosi-como-dracula-reproducao.jpg?w=1003"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,24 @@
+info:
+  name: Novo caçador
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: http://localhost:8080/api/v1/auth/cadastro
+  body:
+    type: json
+    data: |-
+      {
+        "nome":"Bella",
+        "email":"bella.lucasa@gmail.com",
+        "senha":"123456"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,22 @@
+info:
+  name: ID 2
+  type: http
+  seq: 17
+
+http:
+  method: PUT
+  url: http://localhost:8080/api/v1/vampiros/2
+  body:
+    type: json
+    data: |-
+      {
+        "foto_perfil": "https://media.gettyimages.com/id/696103981/pt/foto/hungarian-american-actor-bela-lugosi-as-count-dracula-in-the-1931-horror-classic-dracula.jpg?s=612x612&w=gi&k=20&c=7ZtzGT9rzkbi903aFvmDYPaX-3HpKLT3ULPvszkpxX4="
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

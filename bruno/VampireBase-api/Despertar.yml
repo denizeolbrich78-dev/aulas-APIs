@@ -1,0 +1,23 @@
+info:
+  name: Despertar
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: http://localhost:8080/api/v1/auth/login
+  body:
+    type: json
+    data: |-
+      {
+        "email": "dracula@vampbase.com",
+        "senha": "transilvania123"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

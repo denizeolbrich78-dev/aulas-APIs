@@ -1,0 +1,29 @@
+info:
+  name: quarto vampiro original
+  type: http
+  seq: 15
+
+http:
+  method: POST
+  url: http://localhost:8080/api/v1/vampiros
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Elizabeth Bathory",
+          "idade_humana": 25,
+          "idade_vampirica": 450,
+          "cla": "Dracul",
+          "sangue_favorito": "O-",
+          "fraqueza": "Prata, alho",
+          "habilidade_especial": "Banho de sangue rejuvenescedor",
+          "status": "Adormecido"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
